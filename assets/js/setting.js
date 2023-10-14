@@ -1,161 +1,171 @@
-// Header Fixed
-var headerwrap = jQuery(".header-wrap");
-jQuery(window).on("scroll", function () {
-  if (jQuery(this).scrollTop() > 0) {
-    headerwrap.addClass("sticky");
-  } else {
-    headerwrap.removeClass("sticky");
-  }
-});
-
 jQuery(document).ready(function () {
-  var headerwrap = jQuery(".header-wrap");
-  // Background image
-  jQuery(".bg_img").each(function (i, elem) {
-    var img = $(elem);
-    jQuery(this).hide();
-    jQuery(this)
-      .parent()
-      .css({
-        background: "url(" + img.attr("src") + ") no-repeat no-repeat center center",
-      });
-  });
+	var headerwrap = jQuery(".header-wrap");
+	jQuery(window).on("load scroll ready", function () {
+		if (jQuery(this).scrollTop() > 0) {
+			headerwrap.addClass("sticky");
+		} else {
+			headerwrap.removeClass("sticky");
+		}
+	});
 
-  // Mobile Submenu
-  jQuery(".menu-arrow").on("click", function () {
-    jQuery(this).parents("li").siblings().find(".sub-menu").slideUp();
-    jQuery(this).parents("li").find(".sub-menu").slideToggle();
-  });
-  jQuery(document).bind("click touchstart", function (e) {
-    if ((jQuery(e.target).parents(".menu").length = 0)) jQuery(".sub-menu").slideUp();
-  });
+	jQuery(".menu").on("click", function () {
+		jQuery(".header-wrap .links").toggleClass("open");
+		jQuery("body").toggleClass("pause");
+		jQuery(this).toggleClass("open");
+	});
 
-  // Scroll Offset
-  var headerheight = headerwrap.height();
-  jQuery(".offset-top").on("click", function (e) {
-    e.preventDefault();
-    var target = jQuery(this).data("id");
-    jQuery("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: jQuery("#" + target).offset().top - (headerheight + 15),
-        },
-        1000,
-        "swing",
-        function () {}
-      );
-  });
+	var headerheight = headerwrap.height();
+	// Scroll Offset
+	jQuery(".offset-top").on("click", function (e) {
+		e.preventDefault();
+		var target = jQuery(this).attr("href");
+		jQuery("html, body")
+			.stop()
+			.animate(
+				{
+					scrollTop: jQuery(target).offset().top - 75,
+				},
+				2000,
+				"swing",
+				function () {}
+			);
+	});
 
-  // SVG Create
-  jQuery(function () {
-    jQuery("img.svg").each(function () {
-      var $img = jQuery(this);
-      var imgID = $img.attr("id");
-      var imgClass = $img.attr("class");
-      var imgURL = $img.attr("src");
-      jQuery.get(
-        imgURL,
-        function (data) {
-          var $svg = jQuery(data).find("svg");
-          if (typeof imgID !== "undefined") {
-            $svg = $svg.attr("id", imgID);
-          }
-          if (typeof imgClass !== "undefined") {
-            $svg = $svg.attr("class", imgClass + " replaced-svg");
-          }
-          $svg = $svg.removeAttr("xmlns:a");
-          if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
-            $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"));
-          }
-          $img.replaceWith($svg);
-        },
-        "xml"
-      );
-    });
-  });
+	// SVG Create
+	jQuery(function () {
+		jQuery("img.svg").each(function () {
+			var $img = jQuery(this);
+			var imgID = $img.attr("id");
+			var imgClass = $img.attr("class");
+			var imgURL = $img.attr("src");
+			jQuery.get(
+				imgURL,
+				function (data) {
+					var $svg = jQuery(data).find("svg");
+					if (typeof imgID !== "undefined") {
+						$svg = $svg.attr("id", imgID);
+					}
+					if (typeof imgClass !== "undefined") {
+						$svg = $svg.attr("class", imgClass + " replaced-svg");
+					}
+					$svg = $svg.removeAttr("xmlns:a");
+					if (
+						!$svg.attr("viewBox") &&
+						$svg.attr("height") &&
+						$svg.attr("width")
+					) {
+						$svg.attr(
+							"viewBox",
+							"0 0 " +
+								$svg.attr("height") +
+								" " +
+								$svg.attr("width")
+						);
+					}
+					$img.replaceWith($svg);
+				},
+				"xml"
+			);
+		});
+	});
 
-  // Banner Slider
-  jQuery(".banner-slider").slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    nextArrow: ".banner-next",
-    prevArrow: ".banner-prev",
-    //arrows: false,
-    //fade: true,
-    dots: false,
-    adaptiveHeight: true,
-  });
+	//Submenu
+	jQuery(
+		"<span class='nav-link-toggle'><svg xmlns='http://www.w3.org/2000/svg' width='10.498' height='6' viewBox='0 0 10.498 6'><g id='arrow-down-short' transform='translate(-10.123 -15.872)'><path id='Path_1' data-name='Path 1' d='M10.344,17.093a.75.75,0,0,1,1.062,0l3.967,3.969,3.968-3.969A.751.751,0,0,1,20.4,18.154l-4.5,4.5a.75.75,0,0,1-1.062,0l-4.5-4.5a.75.75,0,0,1,0-1.062Z' transform='translate(0 -1)' fill='#0f1331' fill-rule='evenodd'/></g></svg></span>"
+	).insertBefore(jQuery(".dropdown .dropdown-inner")),
+		jQuery(".nav-link-toggle").on("click", function () {
+			jQuery(this).toggleClass("open");
+			jQuery(this).parents("li").find(".dropdown-inner").slideToggle();
+			jQuery(this)
+				.parents("li")
+				.siblings("li")
+				.find(".dropdown-inner")
+				.slideUp();
+			jQuery(this)
+				.parents("li")
+				.siblings("li")
+				.find(".nav-link-toggle")
+				.removeClass("open");
+		});
 
-  // Client Logo Slider
-  jQuery(".logo-slider ul").slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
+	//Sliders
 
-  /* Header Hamburger */
-  jQuery(".header-hamburger").click(function () {
-    jQuery(this).toggleClass("active");
-    jQuery(".header-right").toggleClass("active");
-    jQuery("body").toggleClass("pause");
-  });
+	jQuery(".customers-slider").slick({
+		dots: false,
+		infinite: true,
+		speed: 1200,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: true,
+		prevArrow: jQuery(".customer-slide-prev"),
+		nextArrow: jQuery(".customer-slide-next"),
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
 
-  // Scroll To Section
-  var target = window.location.hash;
-  setTimeout(function () {
-    if (target != "") {
-      var $target = jQuery(target);
-      jQuery("html, body").animate(
-        {
-          scrollTop: jQuery(target).offset().top - 85,
-        },
-        1000
-      );
-    }
-  });
+	jQuery(".companies-slider").slick({
+		speed: 8000,
+		autoplay: true,
+		autoplaySpeed: 0,
+		cssEase: "linear",
+		slidesToScroll: 1,
+		infinite: true,
+		swipeToSlide: true,
+		arrows: false,
+		dots: false,
+		variableWidth: true,
+		pauseOnHover: false,
+	});
+
+	jQuery(".companies-slider-reverse").slick({
+		speed: 10000,
+		autoplay: true,
+		autoplaySpeed: 0,
+		cssEase: "linear",
+		slidesToScroll: 1,
+		infinite: true,
+		swipeToSlide: true,
+		arrows: false,
+		dots: false,
+		variableWidth: true,
+		pauseOnHover: false,
+	});
 });
 
-$('form[id="form"]').validate({
-  rules: {
-    name: 'required',
-    message: {
-                required: true,
-            },
-    phone: 'required',
-    email: {
-      required: true,
-      email: true,
-    },
-   
-  },
-  messages: {
-    name: 'This field is required',
-    cus_messages: 'This field is required',
-    phone: 'This field is required',
-    email: 'Enter a valid email',
-     message: {
-                required: "Enter your message"
-            }
-   
-  },
-  submitHandler: function(form) {
-    form.submit();
-  }
+jQuery(window).on("load", function () {
+	var headerwrap = jQuery(".header-wrap");
+	var headerheight = headerwrap.height();
+	var target = jQuery("#first-sec");
+	jQuery("html, body")
+		.stop()
+		.animate(
+			{
+				scrollTop: jQuery(target).offset().top - headerheight,
+			},
+			2000,
+			"swing",
+			function () {}
+		);
 });

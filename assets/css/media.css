@@ -1,0 +1,125 @@
+@media (max-width: 991px) {
+	.what-customers-say-wrap .sec-title {
+		padding-bottom: 40px;
+	}
+
+	.showcase-work-sec-wrap .content .left,
+	.showcase-work-sec-wrap .content .right {
+		width: 100%;
+		max-width: none;
+	}
+
+	.showcase-work-sec-wrap .content .right {
+		margin-top: 40px;
+	}
+
+	.work-cards .card {
+		padding: 18px;
+	}
+
+	.work-cards .card .img-box {
+		opacity: 1;
+		visibility: visible;
+		padding-bottom: 32%;
+		height: auto;
+		margin-bottom: 24px;
+	}
+
+	.work-cards .content-group .title {
+		margin: 16px 0;
+	}
+
+	.showcase-work-sec-wrap .content .left .desc {
+		margin-top: 12px;
+		margin-bottom: 18px;
+	}
+
+	.why-choose-us-wrap .content {
+		text-align: center;
+	}
+
+	.why-choose-us-wrap .right {
+		margin-top: 30px;
+	}
+
+	.icon-card-listing > li {
+		width: 50%;
+	}
+
+	.footer-wrap .row > div:last-child {
+		order: -1;
+	}
+
+	.footer-wrap .row > div {
+		margin-bottom: 30px;
+	}
+
+	.footer-wrap .footer-title {
+		margin-bottom: 16px;
+	}
+
+	.footer-wrap .footer-links li:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 767px) {
+	.what-customers-say-wrap .sec-title {
+		padding-bottom: 20px;
+	}
+
+	.what-customers-say-wrap .sec-title {
+		flex-direction: column;
+	}
+
+	.what-customers-say-wrap .sec-title .title {
+		padding-bottom: 20px;
+	}
+
+	.work-cards > li {
+		width: 100%;
+	}
+
+	.work-cards .card {
+		padding: 15px;
+	}
+
+	.work-cards .content-group .title {
+		margin: 12px 0;
+	}
+
+	.work-cards .content-group .btn-icon {
+		font-size: 14px;
+	}
+
+	.icon-card-listing > li {
+		width: 100%;
+	}
+
+	.icon-card-listing > li .card {
+		padding: 16px;
+	}
+
+	.icon-card-listing > li .card .card-title {
+		margin: 8px 0;
+	}
+
+	.companies-sec-wrap .slider-wrap .company-logo .slide .img-box {
+		padding: 10px 20px;
+	}
+
+	.footer-wrap .row > div {
+		margin-bottom: 20px;
+	}
+
+	.footer-wrap .footer-title {
+		margin-bottom: 12px;
+	}
+	.footer-wrap .footer-links li a {
+		font-size: 14px;
+	}
+
+	.footer-wrap .footer-logo-col {
+		margin-top: 0;
+	}
+}
