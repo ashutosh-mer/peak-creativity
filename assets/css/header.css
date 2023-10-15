@@ -953,6 +953,10 @@ ol li:not(:last-child) {
 	left: 0;
 }
 
+.sec-title {
+	padding-bottom: 60px;
+}
+
 @media (max-width: 991px) {
 	h1,
 	.h1 {
@@ -1278,5 +1282,9 @@ ol li:not(:last-child) {
 	.btn-icon .icon {
 		width: 18px;
 		height: 18px;
+	}
+
+	.sec-title {
+		padding-bottom: 30px;
 	}
 }
