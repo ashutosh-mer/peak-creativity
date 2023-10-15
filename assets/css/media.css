@@ -46,6 +46,10 @@
 		width: 50%;
 	}
 
+	.additional-resource-wrap .row > div:not(:last-child) {
+		margin-bottom: 50px;
+	}
+
 	.footer-wrap .row > div:last-child {
 		order: -1;
 	}
@@ -112,6 +116,16 @@
 		padding: 10px 20px;
 	}
 
+	.change-game-wrap .row > div:last-child {
+		border-left: none;
+		border-top: 2px solid var(--secondary);
+	}
+
+	.change-game-wrap .title,
+	.change-game-wrap .desc {
+		padding: 20px;
+	}
+
 	.footer-wrap .row > div {
 		margin-bottom: 20px;
 	}
@@ -137,5 +151,21 @@
 
 	.companies-sec-wrap .slider-wrap .company-logo .slick-track {
 		margin: 0 -8px;
+	}
+
+	.additional-resource-wrap .row > div:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.blog-listing .blog-card .blog-content {
+		padding: 20px;
+	}
+
+	.blog-listing .blog-card .blog-content .btn-wrap {
+		padding-top: 12px;
+	}
+
+	.blog-listing .blog-card .blog-image img {
+		height: 180px;
 	}
 }

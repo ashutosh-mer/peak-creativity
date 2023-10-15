@@ -30,145 +30,150 @@
 		</div>
 	</div>
 	<!-- cta-sec-ends -->
-	
 
-	<!-- our-offering-starts -->
-	<div class="our-offering-wrap section dark-bg">
+	<div class="additional-resource-wrap section dark-bg">
 		<div class="container">
-			<div class="content-group">
-				<h2 class="h2 title">
-					What We Offer
-				</h2>
-				<div class="desc">
-					<p>
-						Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in
-						elit.
-						Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.
-					</p>
+			<div class="content">
+				<div class="sec-title text-center">
+					<h2 class="h2 title">From The Blog</h2>
+				</div>
+
+				<div class="row blog-listing">
+					<div class="col-lg-4">
+						<div class="blog-card">
+							<div class="inner-box">
+								<div class="card">
+									<div class="blog-image">
+										<a href="#">
+											<img src="assets/images/work-card-img.png" alt="thumb" width="442"
+												height="240">
+										</a>
+									</div>
+									<div class="blog-content">
+										<div class="date">March 23, 2023</div>
+										<h5 class="h5 blog-title">
+											<a href="#">
+												Customized NetSuite Comparative Reports for Improved
+												Business Analysis
+											</a>
+										</h5>
+										<div class="btn-wrap">
+											<a href="#" class="btn-link">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="blog-card border-box">
+							<div class="inner-box">
+								<div class="card">
+									<div class="blog-image">
+										<a href="#">
+											<img src="assets/images/work-card-img.png" alt="thumb" width="442"
+												height="240">
+										</a>
+									</div>
+									<div class="blog-content">
+										<div class="date">March 23, 2023</div>
+										<h5 class="h5 blog-title">
+											<a href="#">
+												Customized NetSuite Comparative Reports for Improved
+												Business Analysis
+											</a>
+										</h5>
+										<div class="btn-wrap">
+											<a href="#" class="btn-link">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="blog-card border-box">
+							<div class="inner-box">
+								<div class="card">
+									<div class="blog-image">
+										<a href="#">
+											<img src="assets/images/work-card-img.png" alt="thumb" width="442"
+												height="240">
+										</a>
+									</div>
+									<div class="blog-content">
+										<div class="date">March 23, 2023</div>
+										<h5 class="h5 blog-title">
+											<a href="#">
+												Customized NetSuite Comparative Reports for Improved
+												Business Analysis
+											</a>
+										</h5>
+										<div class="btn-wrap">
+											<a href="#" class="btn-link">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<ul class="icon-card-listing">
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-
-
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-
-
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-
-
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-
-
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="card">
-						<div class="icon-wrap">
-							<img src="assets/images/offering-icon.png" alt="offering-icon" width="48" height="48">
-						</div>
-						<div class="content">
-							<h3 class="h3 card-title">
-								Branding
-							</h3>
-							<p class="desc">
-								Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices
-							</p>
-						</div>
-					</div>
-				</li>
-			</ul>
 		</div>
 	</div>
-	<!-- our-offering-ends -->
+
+
+
+
+	<!-- change-game-sec-starts -->
+	<div class="change-game-wrap section">
+		<div class="container">
+			<div class="content">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<h2 class="h2 title">
+							You guessed it right. <br /> We’re changing the <span class="gradient-text">
+								Game. </span>
+						</h2>
+					</div>
+					<div class="col-md-6">
+						<div class="desc fw-medium">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt libero
+								necessitatibus quisquam placeat? Necessitatibus sunt corrupti nostrum nulla veritatis!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique reiciendis
+								itaque, sed quis atque assumenda tenetur eos sit temporibus ab officia voluptatem
+								repellendus in?
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change-game-sec-starts -->
+
 
 	<!-- inner-banner-starts -->
 	<div class="inner-banner-wrap last-sec" id="first-sec">
 		<div class="container">
 			<div class="content">
-                <div class="tag">
-                About Us
-                </div>
+				<div class="tag">
+					About Us
+				</div>
 				<h1 class="h1 title">
 					Attract <span class="gradient-text">
 						NewLeads
 					</span> like never before
 				</h1>
 				<p class="desc">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut cumque enim error soluta mollitia veniam quisquam repudiandae, fuga quaerat ipsa assumenda doloremque commodi ad illo rerum, quas dolorum voluptates.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut cumque enim error soluta mollitia
+					veniam quisquam repudiandae, fuga quaerat ipsa assumenda doloremque commodi ad illo rerum, quas
+					dolorum voluptates.
 				</p>
 				<div class="btn-wrap">
 					<a href="#second-sec" class="btn btn-primary btn-icon offset-top">
