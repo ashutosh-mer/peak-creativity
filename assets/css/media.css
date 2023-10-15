@@ -61,6 +61,10 @@
 	.footer-wrap .footer-links li:not(:last-child) {
 		margin-bottom: 8px;
 	}
+
+	.companies-sec-wrap .slider-wrap .company-logo .slide .img-box img {
+		max-width: 120px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -121,5 +125,17 @@
 
 	.footer-wrap .footer-logo-col {
 		margin-top: 0;
+	}
+
+	.companies-sec-wrap .slider-wrap .company-logo .slide .img-box img {
+		max-width: 80px;
+	}
+
+	.companies-sec-wrap .slider-wrap .company-logo .slide {
+		padding: 0 8px;
+	}
+
+	.companies-sec-wrap .slider-wrap .company-logo .slick-track {
+		margin: 0 -8px;
 	}
 }

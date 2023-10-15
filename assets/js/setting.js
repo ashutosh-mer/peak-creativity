@@ -154,18 +154,18 @@ jQuery(document).ready(function () {
 	});
 });
 
-jQuery(window).on("load", function () {
-	var headerwrap = jQuery(".header-wrap");
-	var headerheight = headerwrap.height();
-	var target = jQuery("#first-sec");
-	jQuery("html, body")
-		.stop()
-		.animate(
-			{
-				scrollTop: jQuery(target).offset().top - headerheight,
-			},
-			2000,
-			"swing",
-			function () {}
-		);
-});
+// jQuery(window).on("load", function () {
+// 	var headerwrap = jQuery(".header-wrap");
+// 	var headerheight = headerwrap.height();
+// 	var target = jQuery("#first-sec");
+// 	jQuery("html, body")
+// 		.stop()
+// 		.animate(
+// 			{
+// 				scrollTop: jQuery(target).offset().top - headerheight,
+// 			},
+// 			2000,
+// 			"swing",
+// 			function () {}
+// 		);
+// });
