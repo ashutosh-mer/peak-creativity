@@ -699,71 +699,10 @@ p {
 }
 
 /* FormControl Starts */
-.form-control {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.form-control:focus,
-.form-control:active,
-.form-select:focus,
-.form-select:active {
-	border-color: var(--primary) !important;
-	box-shadow: none;
-}
 
 .border-box .inner-box .card,
 .tabs-sec .nav-link .card {
 	border: 0;
-}
-
-.form-group .form-label {
-	font-weight: 600;
-	font-size: 15px;
-	line-height: 1.87;
-	margin-bottom: 6px;
-	color: #506884;
-}
-
-.form-group .form-control {
-	padding: 9px 22px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 2;
-	color: #000;
-	border: 1px solid #bed3ea;
-	border-radius: 5px;
-}
-
-.form-group .form-select {
-	padding: 9px 22px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 2;
-	color: #93a6bb;
-	border: 1px solid #bed3ea;
-	border-radius: 5px;
-}
-
-.form-group .form-select option {
-	color: #000;
-}
-
-.form-group input.form-control {
-	height: 46px;
-}
-
-.form-group .form-control:placeholder-shown,
-.form-group .form-control::placeholder {
-	color: #93a6bb;
-}
-
-.form-group .form-select option:checked {
-	color: #fff;
-	background-color: var(--primary);
-	font-weight: 700;
 }
 
 .list-style-one {
