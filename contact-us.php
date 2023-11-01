@@ -36,7 +36,7 @@
         <div class="container">
             <div class="content">
                 <div class="sec-title text-center">
-                    <h2 class="h2 title">From The Blog</h2>
+                    <h2 class="h2 title">See Our Work</h2>
                 </div>
 
                 <div class="row blog-listing">
@@ -51,7 +51,6 @@
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <div class="date">March 23, 2023</div>
                                         <h5 class="h5 blog-title">
                                             <a href="#">
                                                 Customized NetSuite Comparative Reports for Improved
@@ -78,7 +77,6 @@
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <div class="date">March 23, 2023</div>
                                         <h5 class="h5 blog-title">
                                             <a href="#">
                                                 Customized NetSuite Comparative Reports for Improved
@@ -105,7 +103,6 @@
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <div class="date">March 23, 2023</div>
                                         <h5 class="h5 blog-title">
                                             <a href="#">
                                                 Customized NetSuite Comparative Reports for Improved
@@ -127,54 +124,145 @@
     <!-- additional-resource-sec-ends -->
 
     <!-- contact-us-sec-starts -->
-    <div class="contact-us-sec-wrap">
+    <div class="contact-us-sec-wrap section">
         <div class="container">
             <div class="content">
                 <div class="contact-box">
                     <div class="contact-details">
-
+                        <div class="inner">
+                            <h2 class="h4 title">
+                                Contact Information
+                            </h2>
+                            <p class="desc">
+                                Fill up the form and our Team will get back to you within 24 hours.
+                            </p>
+                            <ul class="contact-links">
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-wrap">
+                                            <svg class="icon">
+                                                <use xlink:href="assets/images/icons/svgsprite.svg#mail-icon"></use>
+                                            </svg>
+                                        </div>
+                                        peak@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon-wrap">
+                                            <svg class="icon">
+                                                <use xlink:href="assets/images/icons/svgsprite.svg#phone-icon"></use>
+                                            </svg>
+                                        </div>
+                                        +91 98765 43210
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="main-form">
+
+
+                    <div class="main-form form-wrap">
                         <form>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">
                                             First name
                                         </label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="Enter Your First Name">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">
                                             Last name
                                         </label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="Enter Your Last Name">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">
                                             Email
                                         </label>
-                                        <input type="email" class="form-control">
+                                        <input type="email" class="form-control" placeholder="Enter Your Email">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">
                                             Phone
                                         </label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="Enter Your Phone Number">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12">
-                                    .
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label">What service do you need?</label>
+                                        <div class="form-check-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="service-radio"
+                                                    id="webdesign">
+                                                <label class="form-check-label" for="webdesign">
+                                                    Web Design
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="service-radio"
+                                                    id="appdesign" checked>
+                                                <label class="form-check-label" for="appdesign">
+                                                    App Design
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="service-radio"
+                                                    id="graphicdesign" checked>
+                                                <label class="form-check-label" for="graphicdesign">
+                                                    Graphic Design
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="service-radio"
+                                                    id="digitalmarketing" checked>
+                                                <label class="form-check-label" for="digitalmarketing">
+                                                    Digital Marketing
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="service-radio"
+                                                    id="other" checked>
+                                                <label class="form-check-label" for="other">
+                                                    Other
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label">
+                                            Message
+                                        </label>
+                                        <textarea cols="5" rows="5" placeholder="Write your message..."
+                                            class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrap">
+                                <button type="submit" class="btn  btn-primary btn-icon">Transform
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/icons/svgsprite.svg#peak-icon"></use>
+                                    </svg>
+                                </button>
                             </div>
                         </form>
                     </div>

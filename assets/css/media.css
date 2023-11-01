@@ -1,3 +1,13 @@
+@media (max-width: 1200px) {
+	.contact-us-sec-wrap .contact-details {
+		max-width: 360px;
+	}
+
+	.contact-us-sec-wrap .main-form {
+		width: calc(100% - 400px);
+	}
+}
+
 @media (max-width: 991px) {
 	.what-customers-say-wrap .sec-title {
 		padding-bottom: 40px;
@@ -68,6 +78,31 @@
 
 	.companies-sec-wrap .slider-wrap .company-logo .slide .img-box img {
 		max-width: 120px;
+	}
+
+	.contact-us-sec-wrap .contact-details {
+		max-width: none;
+		width: 100%;
+		max-height: none;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.contact-us-sec-wrap .main-form {
+		width: 100%;
+	}
+
+	.contact-us-sec-wrap .content {
+		padding: 30px;
+	}
+
+	.process-steps li .inner .list-title {
+		font-size: 20px;
+	}
+
+	.our-process-wrap .title,
+	.our-process-wrap .desc {
+		text-align: center;
 	}
 }
 
@@ -167,5 +202,47 @@
 
 	.blog-listing .blog-card .blog-image img {
 		height: 180px;
+	}
+
+	.contact-us-sec-wrap .contact-details::after {
+		width: 180px;
+		height: 160px;
+		background-size: contain;
+	}
+
+	.contact-us-sec-wrap .contact-details {
+		padding: 25px;
+	}
+
+	.main-form .row > div {
+		margin-bottom: 15px;
+	}
+
+	.form-wrap .form-check-group > div {
+		margin-bottom: 10px;
+	}
+
+	.our-process-wrap .img-box {
+		display: none;
+	}
+
+	.process-steps li .icon-wrap {
+		width: 40px;
+		height: 40px;
+	}
+
+	.process-steps li .icon-wrap .icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.process-steps li .inner {
+		width: calc(100% - 40px);
+	}
+
+	.process-steps li .inner .list-title {
+		font-size: 18px;
+		line-height: normal;
+		margin-bottom: 8px;
 	}
 }
