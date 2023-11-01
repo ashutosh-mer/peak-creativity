@@ -95,6 +95,15 @@
 	.contact-us-sec-wrap .content {
 		padding: 30px;
 	}
+
+	.process-steps li .inner .list-title {
+		font-size: 20px;
+	}
+
+	.our-process-wrap .title,
+	.our-process-wrap .desc {
+		text-align: center;
+	}
 }
 
 @media (max-width: 767px) {
@@ -211,5 +220,29 @@
 
 	.form-wrap .form-check-group > div {
 		margin-bottom: 10px;
+	}
+
+	.our-process-wrap .img-box {
+		display: none;
+	}
+
+	.process-steps li .icon-wrap {
+		width: 40px;
+		height: 40px;
+	}
+
+	.process-steps li .icon-wrap .icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.process-steps li .inner {
+		width: calc(100% - 40px);
+	}
+
+	.process-steps li .inner .list-title {
+		font-size: 18px;
+		line-height: normal;
+		margin-bottom: 8px;
 	}
 }
